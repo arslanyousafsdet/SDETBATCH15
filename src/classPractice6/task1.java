@@ -1,26 +1,16 @@
 package classPractice6;
 
-            import java.util.Scanner;
 public class task1 {
-
     public static void main(String[] args) {
-        /*1) Prompt the user to enter person heights in inches. Person should be classified as one of the following:
-• short (under 60 inch)
-• medium(between 60 -72 inch)
-• tall (over 72 inch)*/
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Please enter the height in inches");
-        int height=scan.nextInt();
-        if(height<60){
-            System.out.println("Short");}
-        else if (height>=60&&height<=72){
-            System.out.println("medium");}else{
-            System.out.println("Tall");
+       /* Create a boolean variable workDay and assign true create int variable day and assign it to 1
+        As long as it is workDay print “I need a day off” and increase day.
+                Once day is 6 print “I do not need a day off any more”*/
+        boolean workDay=true;
+        int day=1;
+        while(day<6){
+            System.out.println(" I need a day off");
+            day++;
 
-
-
-            }
-        }
-
+        }System.out.println("I dont need day off anymore");
     }
-
+}
